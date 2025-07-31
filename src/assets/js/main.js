@@ -65,12 +65,19 @@
         });
       });
 
-    // Preloader removal
+    // Preloader removal with fallback
     const preloader = document.querySelector("#preloader");
+
+    function removePreloader() {
+      if (preloader && preloader.parentNode) {
+        preloader.parentNode.removeChild(preloader);
+      }
+    }
+
     if (preloader) {
-      window.addEventListener("load", () => {
-        preloader.remove();
-      });
+      window.addEventListener("load", removePreloader);
+      // Fallback in case load event doesn't fire (especially on mobile)
+      setTimeout(removePreloader, 5000);
     }
 
     // Scroll to top button
