@@ -624,6 +624,12 @@ h6 {
     transition: all 0.6s ease-out;
 }
 
+#preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 #preloader:before {
     content: "";
     position: fixed;
@@ -695,6 +701,12 @@ h6 {
     .header p,
     .header .btn-getstarted span {
         font-size: 14px;
+    }
+
+    #preloader {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
     }
 }
 

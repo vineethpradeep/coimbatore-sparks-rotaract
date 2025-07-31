@@ -65,19 +65,22 @@
         });
       });
 
-    // Preloader removal with fallback
     const preloader = document.querySelector("#preloader");
 
     function removePreloader() {
-      if (preloader && preloader.parentNode) {
-        preloader.parentNode.removeChild(preloader);
+      if (preloader) {
+        preloader.classList.add("fade-out");
+        setTimeout(() => {
+          if (preloader && preloader.parentNode) {
+            preloader.parentNode.removeChild(preloader);
+          }
+        }, 600); // matches CSS transition
       }
     }
 
     if (preloader) {
       window.addEventListener("load", removePreloader);
-      // Fallback in case load event doesn't fire (especially on mobile)
-      setTimeout(removePreloader, 5000);
+      setTimeout(removePreloader, 5000); // mobile fallback
     }
 
     // Scroll to top button
