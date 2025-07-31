@@ -682,6 +682,20 @@ h6 {
     [data-aos-delay] {
         transition-delay: 0 !important;
     }
+
+    .header .logo h1 {
+        font-size: 18px;
+    }
+
+    .header .btn-getstarted {
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    .header p,
+    .header .btn-getstarted span {
+        font-size: 14px;
+    }
 }
 
 section,
