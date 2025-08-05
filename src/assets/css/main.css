@@ -10,7 +10,7 @@
     --background-color: #ffffff;
     --default-color: #444444;
     --heading-color: #5f687b;
-    --accent-color: #10bc69;
+    --accent-color: #ac33c6;
     --surface-color: #ffffff;
     --contrast-color: #ffffff;
 }
@@ -18,11 +18,11 @@
 /* Navigation Colors */
 :root {
     --nav-color: #5f687b;
-    --nav-hover-color: #10bc69;
+    --nav-hover-color: #ac33c6;
     --nav-mobile-background-color: #ffffff;
     --nav-dropdown-background-color: #ffffff;
     --nav-dropdown-color: #5f687b;
-    --nav-dropdown-hover-color: #10bc69;
+    --nav-dropdown-hover-color: #ac33c6;
 }
 
 .light-background {
@@ -39,10 +39,10 @@
 }
 
 .accent-background {
-    --background-color: #10bc69;
+    --background-color: #ac33c6;
     --default-color: #ffffff;
     --heading-color: #ffffff;
-    --surface-color: #14eb83;
+    --surface-color: #ac33c6;
     --contrast-color: #ffffff;
 }
 
